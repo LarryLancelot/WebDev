@@ -1,4 +1,4 @@
-<doctype = html>
+<html>
 <head>
     <title>Project Lancelot</title>
     <link rel="stylesheet" type="text/css" href="css\style.css">
@@ -8,10 +8,10 @@
 <body>
     <center>
     <h1>Welcome to project lancelot</h1>
-    <a href class="Button" onclick="myMove()">Click Me</button> 
-    <br><br><br><br><br><br>
-    <div id="myContainer">
-    <div id="myAnimation"></div>
-    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <box>content<box>
+<?php
+?>
 </body>
 
+<html>

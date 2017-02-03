@@ -31,5 +31,11 @@ body {
     border-radius: 8px;
 }
 h1 {
-    
+    font: italic 24px/60px georgia, serif;
+}
+box {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid white;
+    margin: 0;
 }
