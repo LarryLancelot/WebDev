@@ -7,10 +7,9 @@
 
 <body>
     <center>
-    <h1>Welcome to project lancelot</h1>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <box>content<box>
 <?php
+    $str = "hey thats pretty good";
+    echo $str1;
 ?>
 </body>
 
