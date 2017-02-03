@@ -1,6 +1,11 @@
 body {
-    background-color: green;
+    height: 1000px;
+    background: -webkit-linear-gradient(#4286f4, #acb4c1, lightgreen); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4286f4, #acb4c1, lightgreen); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4286f4, #acb4c1, lightgreen); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4286f4, #acb4c1, lightgreen); /* Standard syntax (must be last) */
 }
+   /*Animation styles*/
     #myContainer {
         width: 400px;
         height: 400px;
@@ -13,3 +18,18 @@ body {
         position: absolute;
         background: red;
     }
+.Button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+h1 {
+    
+}
