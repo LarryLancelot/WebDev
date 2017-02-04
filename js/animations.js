@@ -15,11 +15,10 @@ function myMove() {
 
 var myVar;
 function loadAM() {
-     myVar = setTimeout(showPage, 3000);
+     myVar = setTimeout(showPage, 1000);
 }
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
-}
 }
