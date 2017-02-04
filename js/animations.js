@@ -26,9 +26,11 @@ function showPage() {
 }
 
 function loadForums() {
-     load2 = setTimeout(showPage2, 750);
+     load2 = setTimeout(showPage2, 850);
 }
 
 function showPage2() {
   document.getElementById("sidebar").style.display = "block";
+  document.getElementById("footer").style.display = "block";
+  document.getElementById("content").style.display = "block"
 }

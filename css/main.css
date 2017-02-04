@@ -1,9 +1,14 @@
-body {
-    height: 900px;
-    background: -webkit-linear-gradient(#4286f4, #acb4c1, lightgreen); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#4286f4, #acb4c1, lightgreen); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#4286f4, #acb4c1, lightgreen); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#4286f4, #acb4c1, lightgreen); /* Standard syntax (must be last) */
+#sidebar
+{
+    float: left;
+    width: 250px;
+    height:100%;
+    background: #313135;
+}
+
+#footer {
+    height: 50px;
+    background: #313135;
 }
 
 .button {
@@ -15,68 +20,16 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 8px;
-    width: 120px;
-    height: 100px;
+    width: 190px;
     transition-property: width;
     transition-duration: 1s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    border:2px solid darkblue;
 }
 
 .button:hover {
-    width:300px;
+    background: #262628;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background: #4286f4;
 }
 
-@font-face {
-    font-family: Oswald;
-    src: url(https://fonts.googleapis.com/css?family=Oswald);
-    
-}
-
-h1 {
-    text-align: center;
-    font-family: Oswald;
-    font-weight: bold;
-    font-size: 60px;
-}
-
-h2 {
-    text-align: center;
-    font-family: Oswald;
-    color: darkblue;
-    font-weight: bold;
-}
-/*animate the loader*/
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-/*animate the page*/
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
@@ -95,7 +48,82 @@ h2 {
   to{ bottom:0; opacity:1 }
 }
 
-#divMain {
-  display: none;
-  text-align: center;
+h1 {
+    text-align: left;
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 60px;
+    -webkit-text-stroke: darkgray;
+    stroke: darkgray;
+    color: white;
+}
+
+h2 {
+    font-family: Oswald;
+    font-size: 28px;
+    text-align: center;
+}
+
+h3 {
+    font-family: Oswald ;
+    font-size: 20px;
+    text-align:left;
+}
+
+h4 {
+    font-family: Roboto;
+    color: white;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.googleapis.com/css?family=Roboto);
+}
+
+.dropbtn {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 190px;
+    transition-property: width;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    color: white;
+    display: none;
+    position: absolute;
+    background-color: #313135;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.dropdown-content a {
+    color: white;
+    display: block;
+    transition: 0.5s;
+}
+
+.dropdown-content a:hover {background-color: #313135}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition-duration: 1s;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #262628;
 }
