@@ -13,12 +13,22 @@ function myMove() {
   }
 }
 
-var myVar;
+var load1;
+var load2;
+
 function loadAM() {
-     myVar = setTimeout(showPage, 1000);
+     load1 = setTimeout(showPage, 1000);
 }
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
+  document.getElementById("divMain").style.display = "block";
+}
+
+function loadForums() {
+     load2 = setTimeout(showPage2, 750);
+}
+
+function showPage2() {
   document.getElementById("divMain").style.display = "block";
 }
