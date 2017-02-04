@@ -15,7 +15,6 @@ function myMove() {
 
 var load1;
 var load2;
-var load21;
 
 function loadAM() {
      load1 = setTimeout(showPage, 1000);
@@ -28,13 +27,8 @@ function showPage() {
 
 function loadForums() {
      load2 = setTimeout(showPage2, 750);
-     load21 = setTimeout(showPage21, 1000);
 }
 
 function showPage2() {
-  document.getElementById("divMain").style.display = "block";
-}
-
-function showPage21() {
-  document.getElementById("divPort").style.display = "block";
+  document.getElementById("sidebar").style.display = "block";
 }
