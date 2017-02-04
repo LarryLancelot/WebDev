@@ -16,7 +16,7 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
-    width: 100px;
+    width: 120px;
     height: 100px;
     transition-property: width;
     transition-duration: 1s;
