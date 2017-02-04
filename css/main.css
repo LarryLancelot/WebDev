@@ -1,5 +1,5 @@
 body {
-    height: 1000px;
+    height: 900px;
     background: -webkit-linear-gradient(#4286f4, #acb4c1, lightgreen); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#4286f4, #acb4c1, lightgreen); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#4286f4, #acb4c1, lightgreen); /* For Firefox 3.6 to 15 */
@@ -30,25 +30,70 @@ body {
 }
 
 @font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
-}
-
-@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_bold.woff);
-    font-weight: bold;
+    font-family: Oswald;
+    src: url(https://fonts.googleapis.com/css?family=Oswald);
+    
 }
 
 h1 {
-    font: italic 48px/120px georgia, serif;
     text-align: center;
-    font-family: myFirstFont;
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 60px;
 }
 
 h2 {
-    font: italic 24px/60px georgia, serif;
     text-align: center;
-    font-family: myFirstFont;
+    font-family: Oswald;
     color: darkblue;
+    font-weight: bold;
 }
+/*animate the loader*/
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/*animate the page*/
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
