@@ -7,7 +7,6 @@ body {
 }
 
 .button {
-    float: left;
     border: none;
     color: white;
     text-align: center;
@@ -52,15 +51,30 @@ body {
   display: none;
 }
 
+#divPort {
+  display: none;
+  width: 400px;
+  border: 10px black;
+  padding: 10px;
+}
+
 h1 {
     text-align: left;
     font-family: Oswald;
     font-weight: bold;
     font-size: 60px;
+    -webkit-text-stroke: darkgray;
+    stroke: darkgray;
 }
 
 h2 {
     font-family: Oswald;
     font-size: 30px;
     text-align: center;
+}
+
+h3 {
+    font-family: Oswald ;
+    font-size: 20px;
+    text-align:left;
 }
