@@ -34,3 +34,7 @@ function showPage2() {
   document.getElementById("footer").style.display = "block";
   document.getElementById("content").style.display = "block"
 }
+
+function reload() {
+  document.reload();
+}
