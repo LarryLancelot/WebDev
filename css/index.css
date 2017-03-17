@@ -1,105 +1,18 @@
 body {
-    height: 900px;
-    background: -webkit-linear-gradient(#4286f4, #acb4c1, lightgreen); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#4286f4, #acb4c1, lightgreen); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#4286f4, #acb4c1, lightgreen); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#4286f4, #acb4c1, lightgreen); /* Standard syntax (must be last) */
+ background-color: grey;
 }
 
 .button {
+    background-color: green;
+    padding: 15px 32px;
     border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
-    border-radius: 8px;
-    width: 120px;
-    height: 100px;
-    transition-property: width;
-    transition-duration: 1s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    border:2px solid darkblue;
+    border-radius: 7px;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
 }
 
 .button:hover {
-    width:300px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background: #4286f4;
-}
-
-@font-face {
-    font-family: Oswald;
-    src: url(https://fonts.googleapis.com/css?family=Oswald);   
-}
-
-@font-face {
-    font-family: Roboto;
-    src: url(https://fonts.googleapis.com/css?family=Roboto);
-}
-
-h1 {
-    text-align: center;
-    font-family: Oswald;
-    font-weight: bold;
-    font-size: 60px;
-}
-
-h2 {
-    text-align: center;
-    font-family: Oswald;
-    color: darkblue;
-    font-weight: bold;
-}
-/*animate the loader*/
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-/*animate the page*/
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
-}
-
-#divMain {
-  display: none;
-  text-align: center;
+    background-color: limegreen;
+    color: white;
 }
