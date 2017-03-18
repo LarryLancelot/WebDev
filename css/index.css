@@ -1,5 +1,6 @@
 body {
- background-color: grey;
+ background-color: white;
+ font-family: sofia;
 }
 
 .button {
@@ -10,9 +11,16 @@ body {
     border-radius: 7px;
     transition-duration: 0.5s;
     transition-delay: 0.2s;
+    font-family: "Arimo";
 }
 
 .button:hover {
     background-color: limegreen;
     color: white;
 }
+
+@font-face {
+  font-family: "Oswald";
+  src: url("fonts\Oswald\Oswald-Regular.ttf") format("TrueType");
+}
+

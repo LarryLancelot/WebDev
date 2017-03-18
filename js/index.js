@@ -1,3 +1,3 @@
-function test() {
-document.getElementById('name').innerHTML = "Hey you clicked the button noice.";
+function scrollGitub() {
+window.scroll(400,1);
 }
